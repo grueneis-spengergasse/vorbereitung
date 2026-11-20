@@ -1,0 +1,47 @@
+
+= Seed for 3xHiF Java projects and exams
+
+* based on *Java*
+* based on *Gradle*
+* uses `gradle/libs.versions.toml` as version catalog
+* has *jackson*, *junit* and *assertj* as dependencies
+
+== Start build
+
+.Shell command to build project
+[source, shell]
+----
+./gradlew build
+----
+
+== Configuration
+
+.Java Version for Idea - `build.gradle.kts`
+[source, kotlin]
+----
+include::build.gradle.kts[lines=18,indent=0]
+----
+
+.Java Version for build - `build.gradle.kts`
+[source, kotlin]
+----
+include::build.gradle.kts[lines=32,indent=0]
+----
+
+.Gradle Version - `gradle/wrapper/gradle-wrapper.properties`
+[source, properties]
+----
+include::gradle/wrapper/gradle-wrapper.properties[lines=3]
+----
+
+.Dependencies - `build.gradle.kts`
+[source, kotlin]
+----
+include::build.gradle.kts[lines=36..44]
+----
+
+.Version catalog - `libs.versions.toml`
+[source, toml]
+----
+include::gradle/libs.versions.toml[]
+----
